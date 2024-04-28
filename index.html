@@ -31,33 +31,64 @@
           <div class="actions">
             <button id="copy-1">
               <img
-                src="./assets/content_copy_FILL0_wght400_GRAD0_opsz24.svg" width="42"
+                src="./assets/content_copy_FILL0_wght400_GRAD0_opsz24.svg"
+                width="42"
                 alt="copy"
               />
             </button>
             <button id="renew">
               <img
-                src="./assets/refresh_FILL0_wght400_GRAD0_opsz24.svg" width="42"
+                src="./assets/refresh_FILL0_wght400_GRAD0_opsz24.svg"
+                width="42"
                 alt="renew"
               />
             </button>
           </div>
         </div>
         <div class="security-indicator">
-            <div id="security-indicator-bar" class="bar" style="width:90%"></div>
+          <div id="security-indicator-bar" class="bar critical"></div>
+        </div>
+         <div id="security-indicator-string" class="indicator-text"></div>
+      </section>
+
+      <section class="box customize">
+        <h3 class="title">Personalizar</h3>
+        <div class="actions">
+          <div class="password-length">
+            <p>Tamanho: <span id="password-length-text">16</span></p>
+            <input
+              type="range"
+              name="password-length"
+              id="password-length"
+              class="slider"
+              value="16"
+              min="4"
+              max="64"
+            />
+          </div>
+          <div class="config">
+            <label class="checkbox-container">
+              <span class="text">Maiúscula</span>
+              <input type="checkbox" id="uppercase-check" checked />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              <span class="text">Números</span>
+              <input type="checkbox" id="number-check" checked />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              <span class="text">Símbolos</span>
+              <input type="checkbox" id="symbol-check" checked />
+              <span class="checkmark"></span>
+            </label>
+          </div>
         </div>
       </section>
 
-      <input
-        type="range"
-        name="password-length"
-        id="password-length"
-        value="16"
-        min="4"
-        max="64"
-      />
-
-      <button id="copy-2">Copiar senha</button>
+      <div class="submit">
+        <button id="copy-2">Copiar senha</button>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
